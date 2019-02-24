@@ -1,0 +1,20 @@
+.hero-section
+{
+    margin: 0;
+    background-image: url("hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.hero-text {
+    color: white;
+    margin: auto;
+    text-shadow: .5em .5em .5em black;
+}
