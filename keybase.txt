@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/zandeez
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andrewcassidy.dev
+  * I am zandeez (https://keybase.io/zandeez) on keybase.
+  * I have a public key ASDs8h5pPgNdXEyzEPH_ViRJd2RrIU7ZKcbqcLRufb66rgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120625756ba49c874c00e9380c78b8f8fc7d695c92c11239de199ac45586ff2e2140a",
+      "host": "keybase.io",
+      "kid": "0120ecf21e693e035d5c4cb310f1ff56244977646b214ed929c6ea70b46e7dbebaae0a",
+      "uid": "861c6a4bb1cbd705694abb33061e0d19",
+      "username": "zandeez"
+    },
+    "merkle_root": {
+      "ctime": 1554369947,
+      "hash": "dc40749eae26bb7c458edacbf7156f3289a123704debafb19ea811c307dcd3c9d74430f5e5876dbf68f07d76710b17c185c3595605c41a97cedf4fdb3e8fe086",
+      "hash_meta": "78761b5f4f456b3fd90956d16475636ac2524a23832eba13bfe9855134c417a9",
+      "seqno": 5093759
+    },
+    "service": {
+      "entropy": "DJS17cA4EVzu70kBdW4DkBQ9",
+      "hostname": "andrewcassidy.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.0.0"
+  },
+  "ctime": 1554369965,
+  "expire_in": 504576000,
+  "prev": "5dcde17750f4586a5ddcf2b31639162f196d55316365c0bbae4053024cf10e65",
+  "seqno": 55,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7PIeaT4DXVxMsxDx/1YkSXdkayFO2SnG6nC0bn2+uq4Kp3BheWxvYWTESpcCN8QgXc3hd1D0WGpd3PKzFjkWLxltVTFjZcC7rkBTAkzxDmXEIJ8nrurNSJQDNK40tpWlWZ2CwrrDdKzL5pPqKubQfbqLAgHCo3NpZ8RAv5Stl7+vDRNhWNW5OvQfojae9LKIkmd0dy6FcuuUIPLtzkXOMPTHrHEK7bPDBZ9CZPqEHD6CJUJhilmhKg9HDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIB25OuuhSugKpWDxLXAlnr3xPAIiJ1qykrvP6byWs52co3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zandeez
+
+==================================================================
