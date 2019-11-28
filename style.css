@@ -16,3 +16,7 @@
     margin: auto;
     text-shadow: .5em .5em .5em black;
 }
+
+img {
+    border-radius: 50%;
+}
