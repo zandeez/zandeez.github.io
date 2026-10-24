@@ -1,29 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Andrew Cassidy, Head of Infrastructure. ISP infrastructure, VoIP and platform engineering.">
-    <title>Andrew Cassidy</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-green.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>Andrew Cassidy · Head of Infrastructure</title>
+    <meta name="description" content="Andrew Cassidy, Head of Infrastructure. ISP platforms, VoIP and infrastructure as code.">
+    <link rel="canonical" href="https://andrewcassidy.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Andrew Cassidy · Head of Infrastructure">
+    <meta property="og:description" content="ISP platforms, VoIP and infrastructure as code.">
+    <meta property="og:url" content="https://andrewcassidy.dev/">
+    <meta name="theme-color" content="#08202c">
+    <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<div class="hero-section">
-    <div class="hero-text mdl-typography--text-center">
-        <img src="https://www.gravatar.com/avatar/7ee873d31b7f7c69742885bb8fdfb607?s=200" alt="Andrew Cassidy" />
-        <h1>Andrew Cassidy BSc (Hons) MBCS</h1>
-        <p class="mdl-typography--display-1">Head of Infrastructure</p>
-        <p class="mdl-typography--subhead"><a href="https://www.orbital.net">Orbital Net Ltd</a> |
-            <a href="https://github.com/zandeez"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/andrewjcassidy/"><i class="fab fa-linkedin"></i></a>
-        </p>
+<nav class="site-nav" aria-label="Main">
+    <a class="brand" href="/">andrewcassidy.dev</a>
+    <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/cv/">CV</a></li>
+    </ul>
+</nav>
+
+<main class="hero">
+    <div class="hero-inner">
+        <img class="avatar" src="https://www.gravatar.com/avatar/7ee873d31b7f7c69742885bb8fdfb607?s=336"
+             width="168" height="168" alt="Andrew Cassidy">
+        <div>
+            <h1>Andrew Cassidy <span class="postnominals">BSc (Hons) MBCS</span></h1>
+            <p class="role">Head of Infrastructure <span>@</span> <a href="https://www.orbital.net">Orbital Net</a></p>
+            <!-- DRAFT intro: rewrite in your own words -->
+            <p class="intro">I design and run the platforms behind an altnet ISP in the South East of England:
+                RADIUS and subscriber management, VoIP on FreeSWITCH, network automation, and the
+                infrastructure as code that ties it all together.</p>
+            <p class="intro">Mostly Python, OpenTofu and Salt, with a long-standing interest in telephony.</p>
+            <div class="actions">
+                <a class="button primary" href="/cv/">View CV</a>
+                <a class="button" href="https://github.com/zandeez">GitHub</a>
+                <a class="button" href="https://www.linkedin.com/in/andrewjcassidy/">LinkedIn</a>
+            </div>
+        </div>
     </div>
-</div>
+</main>
+
+<footer class="site-footer">
+    <p>© Andrew Cassidy</p>
+</footer>
 </body>
 </html>
