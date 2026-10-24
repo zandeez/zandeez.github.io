@@ -20,4 +20,4 @@ python3 -m http.server -d _site 8000
 
 ## Dissertation
 
-Drop `dissertation.pdf` in the repo root and uncomment the link in `cv/index.html`.
+`dissertation.pdf` is exported from the original Google Doc ("CO620 Report").
