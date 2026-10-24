@@ -53,6 +53,7 @@
 .entry-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .entry-head .title { font-weight: 600; }
 .entry-head .org { color: var(--ink-muted); }
+.entry-head .loc { font-size: 0.9em; opacity: 0.8; }
 .entry p { margin: 4px 0 0; }
 
 .sheet ul { margin: 0; padding-left: 1.2em; }
