@@ -40,6 +40,14 @@
         </ul>
     </header>
 
+    <section aria-labelledby="summary">
+        <h2 id="summary">Summary</h2>
+        <p>Infrastructure architect with 18 years of experience across software, networks, and operations. I design,
+            build, and run the platforms an ISP depends on, from routing and anycast to RADIUS, VoIP, and the
+            infrastructure as code underneath. I favour simple designs where a few rules produce the behaviour you want,
+            and I contribute back to the open-source tools I rely on, including FreeSWITCH.</p>
+    </section>
+
     <section aria-labelledby="employment">
         <h2 id="employment">Employment History</h2>
 
@@ -47,13 +55,14 @@
             <div class="dates">July 2014 – Present</div>
             <div>
                 <div class="entry-head"><span class="title">Head of Infrastructure</span><span class="org">Orbital Net Ltd</span></div>
-                <p>Architect for the group’s core platforms with full autonomy over my areas, and significant influence
-                    on technical direction across the team. Designed and built a custom Python/asyncio RADIUS platform replacing FreeRADIUS, serving 22,000 live
+                <p>Architect for the group’s core platforms, with full autonomy over my areas and significant influence on
+                    the team’s technical direction. Built the self-hosted VMware platform the business runs on. Designed
+                    and built a custom Python/asyncio RADIUS platform replacing FreeRADIUS, serving 22,000 concurrent
                     sessions with a multi-vendor NAS driver model. Architecting a greenfield FreeSWITCH VoIP platform
-                    using RabbitMQ Streams and online fraud detection. Infrastructure as code with OpenTofu, Salt and
-                    peer-reviewed GitLab CI pipelines across OVH Public Cloud (OpenStack) and Cloudflare Zero Trust.
-                    Developing bulk network device automation and internal Django tools, and supporting customers and
-                    sales with technical issues.</p>
+                    using RabbitMQ Streams and online fraud detection. Cloudflare Zero Trust with Entra ID and DNS managed
+                    as code with OpenTofu and peer-reviewed GitLab CI/CD pipelines. Developing bulk network device
+                    automation and internal Django tools, and supporting customers and sales with technical
+                    escalations.</p>
             </div>
         </article>
 
@@ -61,9 +70,9 @@
             <div class="dates">Nov 2012 – July 2014</div>
             <div>
                 <div class="entry-head"><span class="title">IT Developer</span><span class="org">Selectabase Ltd</span></div>
-                <p>Developing the website and network infrastructure whilst designing the next generation of services.
-                    Designed new hosting infrastructure for resilience and fault tolerance using failover technologies
-                    and virtual machines.</p>
+                <p>Designed new hosting infrastructure for resilience and fault tolerance using failover and
+                    virtualisation, while developing the website and network infrastructure for the next generation of
+                    services.</p>
             </div>
         </article>
 
@@ -71,18 +80,19 @@
             <div class="dates">April 2012 – July 2012</div>
             <div>
                 <div class="entry-head"><span class="title">Support Operative</span><span class="org">Numbergroup Billing Services Ltd</span></div>
-                <p>Supported customers, from basic requests to technical issues with setting up their SIP
-                    equipment. New system developments based upon FreeSWITCH, including a hosted PBX and dial-through
-                    services.</p>
+                <p>Supported customers with SIP equipment configuration and troubleshooting. Prototyped new
+                    FreeSWITCH-based services, including a hosted PBX and dial-through.</p>
             </div>
         </article>
 
         <article class="entry">
-            <div class="dates">July 2011 – March 2026</div>
+            <div class="dates">July 2011 – Present</div>
             <div>
-                <div class="entry-head"><span class="title">Managing Director</span><span class="org">Cassidy Web Services Ltd</span></div>
-                <p>Small business: designed and developed Django-based websites and applications for clients I worked
-                    with directly. Designed, built and maintained the specialised hosting infrastructure.</p>
+                <div class="entry-head"><span class="title">Director</span><span class="org">Cassidy Web Services Ltd</span></div>
+                <p>Originally Django development and hosting for small clients. Since moved away from commodity hosting
+                    to focus on infrastructure work, currently rebuilding Selectabase’s platform on OVH Public Cloud
+                    (OpenStack) with OpenTofu, Salt, GitLab CI and Cloudflare Access, including a migration from CentOS 7
+                    to AlmaLinux 10.</p>
             </div>
         </article>
 
@@ -90,9 +100,10 @@
             <div class="dates">May 2010 – March 2012</div>
             <div>
                 <div class="entry-head"><span class="title">Software Developer</span><span class="org">OPKO Instrumentation Inc</span></div>
-                <p>Development and maintenance of medical imaging software for a new line of spectral OCT (Optical
-                    Coherence Tomography) systems. Designed a Hardware Abstraction Layer to ensure the current software
-                    can run on future equipment with minimal modification.</p>
+                <p>R&amp;D role on medical imaging software for a new line of spectral OCT (Optical Coherence Tomography)
+                    systems, prototyping new approaches including offloading FFT processing to the GPU with CUDA.
+                    Designed a Hardware Abstraction Layer so the software could run on future equipment with minimal
+                    modification.</p>
             </div>
         </article>
 
@@ -100,9 +111,9 @@
             <div class="dates">May 2008 – May 2010</div>
             <div>
                 <div class="entry-head"><span class="title">Systems Developer</span><span class="org">Access UK Ltd (formerly Select Software Ltd)</span></div>
-                <p>Developed and maintained SelectHR, a data-driven HR system written in C# and backed by SQL Server.
-                    Before the Access UK takeover, also heavily involved in developing and maintaining the network
-                    infrastructure.</p>
+                <p>Developed and maintained SelectHR, a data-driven HR system written in C# (.NET) and backed by SQL
+                    Server. When the IT manager left, I stepped in to run the company’s internal IT, including Active
+                    Directory and Exchange, until the parent company’s IT team took it over after the acquisition.</p>
             </div>
         </article>
     </section>
