@@ -7,7 +7,7 @@ import { chromium } from 'playwright';
 
 const root = resolve(import.meta.dirname, '..');
 const out = join(root, '_site');
-const include = ['index.html', '404.html', 'CNAME', 'sitemap.xml', 'assets', 'cv', 'dissertation.pdf'];
+const include = ['index.html', '404.html', 'CNAME', 'sitemap.xml', 'favicon.ico', 'favicon.svg', 'apple-touch-icon.png', 'assets', 'cv', 'dissertation.pdf'];
 
 await rm(out, { recursive: true, force: true });
 await mkdir(out);
