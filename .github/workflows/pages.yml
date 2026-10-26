@@ -23,7 +23,11 @@ jobs:
         with:
           node-version: 22
       - name: Install Playwright Chromium
+        # apt mirrors occasionally stall mid-download: make apt give up on a dead
+        # connection and retry, and fail the step rather than hang the run
+        timeout-minutes: 10
         run: |
+          echo 'Acquire::http::Timeout "30"; Acquire::Retries "5";' | sudo tee /etc/apt/apt.conf.d/99-stall-retry
           npm install --no-save playwright@1.48.2
           npx playwright install --with-deps chromium
       - name: Build site and CV PDF
