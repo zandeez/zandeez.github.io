@@ -4,7 +4,7 @@ Hand-written static site. No framework, no build step for the pages themselves.
 
 - `index.html`: home
 - `cv/index.html`: CV. Screen styles show a paper sheet; print styles give an A4 layout
-- `assets/`: shared CSS
+- `assets/`: shared CSS, and the self-hosted Inter fonts in `assets/fonts/` (SIL OFL, licence alongside)
 - `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`: AC monogram icons
 - `scripts/build.mjs`: copies the site into `_site/` and renders `cv/andrew-cassidy-cv.pdf` with headless Chromium
 - `.github/workflows/pages.yml`: runs the build and deploys to GitHub Pages on every push to `main`
