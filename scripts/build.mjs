@@ -1,6 +1,7 @@
 // Assemble the site into _site/ and render the CV page to PDF.
 // Usage: node scripts/build.mjs   (needs the "playwright" package and Chromium)
-import { cp, mkdir, rm } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { cp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
@@ -15,6 +16,20 @@ for (const item of include) {
     await cp(join(root, item), join(out, item), { recursive: true }).catch((err) => {
         if (err.code !== 'ENOENT') throw err; // optional files (e.g. dissertation.pdf) may be absent
     });
+}
+
+// Cloudflare and browsers cache assets/*.css for hours, so give each stylesheet link a content hash
+const cssVersion = {};
+for (const name of await readdir(join(out, 'assets'))) {
+    if (name.endsWith('.css')) {
+        cssVersion[name] = createHash('sha256').update(await readFile(join(out, 'assets', name))).digest('hex').slice(0, 8);
+    }
+}
+for (const html of ['index.html', '404.html', join('cv', 'index.html')]) {
+    const path = join(out, html);
+    const text = await readFile(path, 'utf8');
+    await writeFile(path, text.replace(/(href="[^"]*assets\/)([\w-]+\.css)"/g,
+        (match, prefix, name) => (name in cssVersion ? `${prefix}${name}?v=${cssVersion[name]}"` : match)));
 }
 
 const browser = await chromium.launch();
